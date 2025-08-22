@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mytoolkit"
+version = "0.1.0"
+description = "AnnData/MuData helper toolkit for QC, clustering, thresholding, and plotting"
+authors = [{ name="BrettR", email="bpr4242@gmail.com" }]
+license = {text = "MIT"}
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+    "scanpy>=1.9.5",
+    "mudata>=0.2.3",
+    "pandas>=2.0",
+    "numpy>=1.23",
+    "seaborn>=0.12",
+    "matplotlib>=3.7",
+    "scikit-learn>=1.3",
+    "ipywidgets>=8.0",
+]
