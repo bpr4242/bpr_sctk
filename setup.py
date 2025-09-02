@@ -1,12 +1,12 @@
 from setuptools import setup, find_packages
 
 setup(
-    name="yourtoolkit",
+    name="bpr_sctoolkit",
     version="0.1.0",
     description="Multimodal single-cell toolkit (UMAP/Leiden, GMM-based ADT denoising, QC, visualization, etc.)",
     author="Brett",
-    author_email="your_email@example.com",
-    url="https://github.com/yourusername/yourtoolkit",
+    author_email="bpr5bf@virginia.edu",
+    url="https://github.com/bpr4242/bpr_sctoolkit",
     packages=find_packages(),
     install_requires=[
         "numpy",
