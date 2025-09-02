@@ -1,8 +1,8 @@
 # =============================================================================
-# monolithic_singlecell_toolkit.py
+# bpr_sctoolkit.py
 # =============================================================================
 """
-Monolithic single-cell/multimodal utilities for Scanpy/MuData workflows.
+Brett's single-cell/multimodal utilities for Scanpy/MuData workflows.
 
 This file consolidates all helpers and core functions you provided into ONE
 drop-in module with detailed, NumPy-style docstrings and example usage.
