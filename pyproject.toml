@@ -1,22 +1,31 @@
 [build-system]
-requires = ["setuptools>=61.0"]
+requires = ["setuptools>=61.0", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "mytoolkit"
+name = "bpr_sctk"
 version = "0.1.0"
-description = "AnnData/MuData helper toolkit for QC, clustering, thresholding, and plotting"
-authors = [{ name="BrettR", email="bpr4242@gmail.com" }]
-license = {text = "MIT"}
-readme = "README.md"
-requires-python = ">=3.9"
-dependencies = [
-    "scanpy>=1.9.5",
-    "mudata>=0.2.3",
-    "pandas>=2.0",
-    "numpy>=1.23",
-    "seaborn>=0.12",
-    "matplotlib>=3.7",
-    "scikit-learn>=1.3",
-    "ipywidgets>=8.0",
+description = "Multimodal single-cell toolkit (UMAP/Leiden, GMM-based ADT denoising, QC, visualization, etc.)"
+authors = [
+  {name="Brett", email="bpr4242@gmail.com"}
 ]
+readme = "README.md"
+license = {text = "MIT"}
+requires-python = ">=3.9"
+keywords = ["single-cell", "scRNA-seq", "scanpy", "muon", "rapids", "ADTnorm"]
+
+dependencies = [
+  "numpy",
+  "pandas",
+  "scipy",
+  "matplotlib",
+  "seaborn",
+  "scanpy",
+  "muon",
+  "scikit-learn",
+  "joblib",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/yourusername/yourtoolkit"
+"Bug Tracker" = "https://github.com/yourusername/yourtoolkit/issues"
