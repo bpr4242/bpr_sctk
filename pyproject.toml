@@ -27,5 +27,5 @@ dependencies = [
 ]
 
 [project.urls]
-"Homepage" = "https://github.com/yourusername/yourtoolkit"
-"Bug Tracker" = "https://github.com/yourusername/yourtoolkit/issues"
+"Homepage" = "https://github.com/bpr4242/bpr_sctk"
+"Bug Tracker" = "https://github.com/bpr4242/bpr_sctk/issues"
