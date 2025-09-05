@@ -1,5 +1,5 @@
 """
-bpr_sctoolkit
+bpr_sctk
 ===========
 
 Multimodal single-cell analysis toolkit:
@@ -10,4 +10,4 @@ Multimodal single-cell analysis toolkit:
 - QC visualization
 """
 
-from .bpr_sctoolkit import *   # re-export all functions in toolkit.py
+from .bpr_sctk import *   # re-export all functions in toolkit.py
