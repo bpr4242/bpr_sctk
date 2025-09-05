@@ -6,7 +6,7 @@ setup(
     description="Multimodal single-cell toolkit (UMAP/Leiden, GMM-based ADT denoising, QC, visualization, etc.)",
     author="Brett",
     author_email="bpr5bf@virginia.edu",
-    url="https://github.com/bpr4242/bpr_sctoolkit",
+    url="https://github.com/bpr4242/bpr_sctk",
     packages=find_packages(),
     install_requires=[
         "numpy",
