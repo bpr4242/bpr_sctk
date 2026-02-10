@@ -972,6 +972,17 @@ def run_umap_leiden_grid(
 
     umap_plot_basis = [f"{compute_mod}:{k}" if compute_mod else k for k in made_umaps] if is_mudata else made_umaps
     leiden_plot_keys = [f"{compute_mod}:{k}" if compute_mod else k for k in made_leidens] if is_mudata else made_leidens
+    
+    # Sync modality-specific keys to parent MuData object
+    if is_mudata:
+        mdata.update()
+        # Manually copy .obsm keys with modality prefix since update() doesn't handle obsm
+        for kind, mm in dests:
+            if kind == "modality" and mm is not None:
+                for umap_key in made_umaps:
+                    if umap_key in mdata.mod[mm].obsm:
+                        mdata.obsm[f"{mm}:{umap_key}"] = mdata.mod[mm].obsm[umap_key]
+    
     return {
         "umap_obsm_keys": made_umaps,
         "leiden_obs_keys": made_leidens,
